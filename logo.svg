@@ -1,0 +1,21 @@
+<svg viewBox="0 0 560 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Shelfmark</title>
+  <desc id="logo-desc">An open book with a ribbon bookmark and the words Shelfmark, A Reading Log.</desc>
+  <defs>
+    <style>
+      .word { font-family: Georgia, 'Times New Roman', serif; }
+    </style>
+  </defs>
+
+  <g transform="translate(20,20)">
+    <circle cx="60" cy="60" r="60" fill="#3B2A1E"/>
+    <path d="M60 34 C48 27,33 25,24 27 L24 88 C33 86,48 88,60 95 Z" fill="#EDE6D3"/>
+    <path d="M60 34 C72 27,87 25,96 27 L96 88 C87 86,72 88,60 95 Z" fill="#EDE6D3"/>
+    <path d="M60 34 L60 95" stroke="#B08D57" stroke-width="1.5"/>
+    <path d="M30 40 C40 37,50 38,57 42 M30 50 C40 47,50 48,57 52 M30 60 C40 57,50 58,57 62 M90 40 C80 37,70 38,63 42 M90 50 C80 47,70 48,63 52 M90 60 C80 57,70 58,63 62" stroke="#C9BC98" stroke-width="1.4" fill="none"/>
+    <path d="M54 -6 L66 -6 L66 40 L60 33 L54 40 Z" fill="#B08D57"/>
+  </g>
+
+  <text x="165" y="90" class="word" font-size="52" font-weight="600" fill="#EDE6D3">Shelfmark</text>
+  <text x="167" y="112" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="1.5" fill="#B08D57">A READING LOG</text>
+</svg>
