@@ -4,11 +4,11 @@ requireLogin();
 
 $pdo = getDbConnection();
 $views = [
-    'all' => ['label' => 'My Library', 'title' => 'My Library'],
-    'currently_reading' => ['label' => 'Currently Reading', 'title' => 'Currently Reading'],
-    'want_to_read' => ['label' => 'Want to Read', 'title' => 'Want to Read'],
-    'finished' => ['label' => 'Finished', 'title' => 'Finished'],
-    'favorite' => ['label' => 'Favorites', 'title' => 'Favorites'],
+    'all' => ['label' => 'My Library', 'title' => 'My Library', 'pageTitle' => 'My Library - Shelfmark'],
+    'currently_reading' => ['label' => 'Currently Reading', 'title' => 'Currently Reading', 'pageTitle' => 'Currently Reading - Shelfmark'],
+    'want_to_read' => ['label' => 'Want to Read', 'title' => 'Want to Read', 'pageTitle' => 'Want to Read - Shelfmark'],
+    'finished' => ['label' => 'Finished', 'title' => 'Finished', 'pageTitle' => 'Finished - Shelfmark'],
+    'favorite' => ['label' => 'Favorites', 'title' => 'Favorites', 'pageTitle' => 'Favorites - - Shelfmark'],
 ];
 $selectedView = $_GET['view'] ?? 'all';
 if (!isset($views[$selectedView])) {
@@ -36,7 +36,7 @@ $snapshot = $snapshotStmt->fetch();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shelfmark</title>
+    <title><?= e($views[$selectedView]['pageTitle']) ?></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>

@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Log In - Book Tracker</title>
+    <title>Login - Shelfmark</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
